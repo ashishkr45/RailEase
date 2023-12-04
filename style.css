@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 754px;
+    background: url(./assets/home/home1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* filter: blur(8px); */
+    position: relative;
+    height: 100vh;
+}
+
+.view1 {
+    height: 450px;
+    margin-bottom: 120PX;
+}
+
+.train-head {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.train-head img {
+    margin-right: 10px;
+}
+
+.landingpart {
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    top: 10%;
+    /* Adjust vertical positioning */
+    left: 32%;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ticket {
+    background: rgba(0, 0, 0, 0.7);
+    /* background: #fff; */
+    border-radius: 10px;
+    height: 120px;
+    width: 80%;
+    margin-top: 15%;
+    margin-left: 10%;
+    padding: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+.ticket input {
+    padding-left: 20px;
+    height: 45px;
+    width: 320px;
+    padding: 0px 10.5px;
+    gap: 10px;
+}
+
+.input {
+    border-radius: 12px;
+    border: none;
+    background-color: antiquewhite;
+}
+
+.ticket button {
+    padding: 0 16px;
+    width: 135px;
+    height: 43.93px;
+    background: #ff8126;
+    color: #f9faff;
+    border: none;
+    font-size: 18px;
+    border-radius: 12px;
+    box-shadow: 0 0 5px #ff8126, 0 0 10px #ff8126;
+    transition: .5s;
+}
+
+.ticket button:hover {
+    box-shadow: 0 0 5px #ff8126,
+        0 0 15px #ff8126, 0 0 10px #ff8126;
+}
+
+.under-line {
+    width: 134.5px;
+    height: 4px;
+    background-color: #ff8126;
+}
+
+.view2 {
+    margin-top: 20px;
+    margin: 4rem;
+    background: #f9faff;
+}
+
+.offers {
+    margin: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer-img {
+    box-shadow: 0 0 15px #0000001a;
+}
+
+.offer-img:hover {
+    /* box-shadow: 0 0 25px #0000001a; */
+    box-shadow: 12px 10px 70px rgba(255, 129, 38, 0.3);
+}
+
+.offers img {
+    height: 200px;
+    width: 344px;
+}
+
+.justification-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justification {
+    height: 463.2px;
+    width: 1200px;
+    margin: 16px 0px;
+    padding: 32px;
+    background: #fff;
+    box-shadow: 0 0 15px #0000001a;
+    border-radius: 24px;
+}
+
+.content-container {
+    width: 1136px;
+    height: 296px;
+    margin: 16px 0;
+}
+
+.content-row1 {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.content-row2 {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.content-icon img {
+    margin-top: 6px;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.content {
+    width: 408px;
+    height: 84px;
+    margin-left: 70px;
+    margin-top: 50px;
+    display: flex;
+    align-content: center;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.content:hover {
+    box-shadow: 10px 10px 70px rgba(240, 117, 104, 0.3);
+}
+
+.content-text {
+    margin: 10px 0 0 10px;
+}
+
+.content-text p {
+    color: #969696;
+}
+
+.travel-blog-container {
+    margin-top: 50px;
+}
+
+.travel-blog {
+    margin-top: 40px;
+}
+
+.card-container {
+    height: 380px;
+    width: 1200px;
+    margin-left: 110px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    padding: 16px;
+    min-width: 335px;
+    max-width: 335px;
+    min-height: 380px;
+    max-height: 380px;
+    margin: 0px 16px 0px 0px;
+    box-shadow: 0 0 15px #00000026;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.card:hover {
+    box-shadow: 10px 0 25px rgba(255, 129, 38, 0.3);
+    box-shadow: 12px 16px 70px rgba(255, 129, 38, 0.3);
+}
+
+.confused-container {
+    height: 400px;
+    margin-top: 80px;
+    margin-left: 50px;
+    padding-top: 38px;
+    box-shadow: 0 0 15px #0000001a;
+    border-radius: 24px;
+}
+
+.confused {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.confused-heading {
+    height: 324px;
+    width: 400px;
+}
+
+.confused-heading p {
+    font-size: 20px;
+    color: #646464;
+}
+
+.confused-img {
+    height: 324px;
+    width: 217px;
+    padding-top: 290px;
+    padding-left: 15px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    box-shadow: 10px 5px 15px #00000026;
+    transition: .5s;
+}
+
+.confused-button {
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+.confused-button button {
+    padding: 0 16px;
+    width: 135px;
+    height: 43.93px;
+    background: #ff8126;
+    color: #f9faff;
+    border: none;
+    font-size: 18px;
+    border-radius: 12px;
+    box-shadow: 0 0 5px #ff8126;
+    transition: 1s;
+}
+
+.confused-button button:hover {
+    box-shadow: 10px 0 25px rgba(255, 129, 38, 0.3);
+}
+
+.confused-img:hover {
+    box-shadow: 12px 16px 15px rgba(255, 129, 38, 0.3);
+}
+
+#Delhi {
+    background: url(./assets/home/confused/delhi.jpg);
+}
+
+#Bengaluru {
+    background: url(./assets/home/confused/bangalore.jpg);
+}
+
+#Chennai {
+    background: url(./assets/home/confused/chennai.jpg);
+}
+
+.review-container {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.review-card {
+    padding: 16px;
+    min-width: 335px;
+    max-width: 335px;
+    min-height: 380px;
+    max-height: 380px;
+    margin: 0px 16px 0px 0px;
+    box-shadow: 0 0 15px #00000026;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.review-card:hover {
+    /* box-shadow: 12px 10px 80px rgb(0, 0, 0, 40%); */
+    box-shadow: 12px 10px 80px rgba(255, 129, 38, 0.3);
+}
+
+.review-card-img {
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+.review-card img {
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+
+.review-card-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Booking-Online-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.booking-online-content {
+    height: 400px;
+    width: 1200px;
+    margin: 16px 0px;
+    padding: 32px;
+    background: #fff;
+    box-shadow: 0 0 15px #0000001a;
+    border-radius: 24px;
+}
+
+.booking-head {
+    margin-bottom: 30px
+}
+
+.footer {
+    margin-top: 2980px;
+    background: #111;
+}
+
+.footerContainer {
+    padding: 70px 30px 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #FFF;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.social a:hover i {
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.footer-bottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #FFF;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}

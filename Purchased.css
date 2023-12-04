@@ -1,0 +1,59 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+  
+.background {
+    background-image: url('./assets/ankush-minda-7KKQG0eB_TI-unsplash.jpg');
+    /* background: transparent;
+    backdrop-filter: blur(20px); */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: relative;
+}
+  
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+.message-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+  
+.message-box p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer {
+    /* position: fixed; */
+    /* bottom: 0;
+    left: 0;
+    right: 0; */
+    padding: 2rem;
+    background: #000000;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;*/
+    align-content: flex-end;
+    gap: 0.2rem;
+}
+  

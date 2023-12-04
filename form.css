@@ -1,0 +1,86 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  max-width: 100%;
+  margin-top: 250px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  border-radius: 12px;
+}
+
+.under-line {
+  width: 134.5px;
+  height: 4px;
+  background-color: #ff8126;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+select {
+  appearance: none;
+}
+
+.purchase-container {
+  display: flex;
+  align-content: center;
+  justify-content: center
+}
+
+.purchase-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  width: 135px;
+  height: 43.93px;
+  background: #ff8126;
+  color: #f9faff;
+  border: none;
+  font-size: 18px;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #ff8126, 0 0 10px #ff8126;
+  transition: .5s;
+}
+
+.purchase-button a {
+  align-items: center;
+  text-decoration: none;
+  color: #cfff;
+}
+
+.purchase-button:hover {
+  box-shadow: 0 0 5px #ff8126,
+    0 0 15px #ff8126, 0 0 10px #ff8126;
+}

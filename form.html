@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RailEase</title>
+  <link rel="stylesheet" href="form.css">
+  <link rel="icon" href="./assets/icon.png">
+</head>
+
+<body>
+
+  <form>
+    <center>
+      <h2 style="font-size: 36px;">Enter Your Details</h1>
+        <div class="under-line"></div>
+    </center>
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="appointmentDate">Booking Date:</label>
+    <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+    <label for="appointmentTime">Booking Time:</label>
+    <input type="time" id="appointmentTime" name="appointmentTime" required>
+    <label for="department">Select Train Coach</label>
+    <select id="department" name="department" required>
+      <option value="">Please Select</option>
+      <option value="general">1st AC</option>
+      <option value="pediatrics">2nd AC</option>
+      <option value="cardiology">3rd AC</option>
+      <option value="cardiology">Sleeper</option>
+    </select>
+
+    <!-- <label for="procedure">Returning Date</label>
+    <input type="time" id="appointmentTime" name="appointmentTime" required>
+
+    <label for="appointmentTime">Returning Time:</label>
+    <input type="time" id="appointmentTime" name="appointmentTime" required> -->
+
+    <div class="purchase-container">
+      <div class="purchase-button">
+        <a href="Purchased.html">Purchase
+        </a>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

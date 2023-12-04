@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #f9faff;
+    /* background: -webkit-linear-gradient(to top, #000C40, #F0F2F0);
+    background: linear-gradient(to top, #000C40, #F0F2F0); */
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.heading {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    /* border: 2px solid white;
+    border-radius: 20px; */
+}
+
+/* .content */
+.packages {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.packages .cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+    /* box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.2); */
+    box-shadow: 12px 10px 80px rgba(255, 129, 38, 0.3);
+    transition: 0.5s;
+}
+
+.packages .cards:hover {
+    height: 400px;
+}
+
+.packages .cards .img {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #222;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.packages .cards:hover .img {
+    top: -100px;
+    scale: 0.75;
+    /* box-shadow: 0px 15px 80px rgba(0, 0, 0, 0.15); */
+    box-shadow: 12px 10px 80px rgba(255, 129, 38, 0.3);
+}
+
+.packages .cards .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.packages .cards .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.under-line {
+    width: 134.5px;
+    height: 4px;
+    background-color: #ff8126;
+}
+
+.packages .cards:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.travel-stories-container {
+    width: 1200px;
+    height: 625.4px;
+    margin-left: 90px;
+    margin-bottom: 60px;
+}
+
+.travel-stories-head {
+    margin-left: 170px;
+    margin-bottom: 60px;
+}
+
+.story-container {
+    padding-left: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.story-card {
+    height: 320px;
+    width: 580px;
+    margin: 0 16px 0 0;
+    padding: 16px 32px;
+    border-radius: 18px;
+    box-shadow: 0 10px 50px #0000001a;
+    transition: .5s;
+}
+
+.story-card:hover {
+    /* box-shadow: 12px 16px 15px rgb(0, 0, 0, 40%); */
+    box-shadow: 12px 10px 80px rgba(255, 129, 38, 0.5);
+
+}
+
+.story-head-text {
+    margin-top: 20px;
+}
+
+.story-head {
+    display: flex;
+    align-content: center;
+}
+
+.story-head img {
+    width: 140px;
+    height: 130px;
+    border-radius: 12px;
+    margin-right: 12px
+}
+
+.story-content {
+    margin-top: 30px;
+}
+
+.footer {
+    /* margin-top: 80px; */
+    background: #111;
+}
+
+.footerContainer {
+    padding: 70px 30px 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #FFF;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.social a:hover i {
+    color: #FFF;
+    transition: 0.5s;
+}
+
+.footer-bottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #FFF;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
